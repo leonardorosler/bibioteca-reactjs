@@ -45,12 +45,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.incluiLivros input:focus,
-.incluiLivros select:focus {
-    outline: none;
-    border-color: #8f56c7;
-    box-shadow: 0 0 0 3px rgba(143, 86, 199, 0.1);
-}
 
 .incluiLivros select {
     cursor: pointer;
@@ -75,19 +69,3 @@
     transition: background-color 0.2s, transform 0.1s;
 }
 
-.incluiLivros button:hover {
-    background-color: #7a45ad;
-    transform: translateY(-1px);
-}
-
-.incluiLivros button:active {
-    transform: translateY(0);
-}
-
-/* Responsividade */
-@media (max-width: 600px) {
-    .incluiLivros {
-        padding: 20px;
-        margin: 20px;
-    }
-}

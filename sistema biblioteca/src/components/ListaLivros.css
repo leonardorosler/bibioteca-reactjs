@@ -1,9 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-/* .cardLivro {
+.cardLivro {
   display: flex;
   gap: 20px;
   background: white;
@@ -52,4 +47,4 @@
   color: #666;
   margin: 0;
   font-weight: 400;
-} */
+}

@@ -1,11 +1,15 @@
 import Cabecalho from "./components/Cabecalho";
-import { useForm } from "react-hook-form";
-import { useEffect } from "react";
+import ListaLivros from "./components/ListaLivros"
+
 import './Inclusao.css';
+
+import { useForm } from "react-hook-form";
+import { useEffect, useState } from "react";
 
 export default function Inclusao() {
 
     const { register, handleSubmit, reset, setFocus } = useForm();
+    const [livros, setLivros] = useState([])
 
     async function cadastraLivros(data) {
         const { titulo, autor, genero, editora, ano, imagem } = data;
@@ -28,6 +32,16 @@ export default function Inclusao() {
         reset();
     }
 
+    useEffect( () => {
+        async function buscarLivros() {
+          const resposta = await fetch("http://localhost:3000/livros")
+          const dados = await resposta.json()
+          setLivros(dados)
+          setLivrosOriginais(dados)
+        }
+        buscarLivros()
+    }, [])
+
     useEffect(() => {
         setFocus("titulo");
     }, []);
@@ -36,7 +50,7 @@ export default function Inclusao() {
         <>
             <Cabecalho />
             <div className="incluiLivros">
-            <h1>Inclusão de Livros</h1>
+            <h1><img src="/add-lilas.png" /> Inclusão de Livros</h1>
                 <form onSubmit={handleSubmit(cadastraLivros)}>
                     <p>
                         <label>Titulo do Livro:</label>
@@ -112,9 +126,7 @@ export default function Inclusao() {
                     </div>
                 </form>
             </div>
-            <div className='listaCards'>
-                {/* {listaLivros} */}
-            </div>
+            <ListaLivros livros={livros} />
         </>
     )
 }

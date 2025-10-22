@@ -1,58 +1,76 @@
 {
-    "livros": [
-      {
-        "id": "1",
-        "titulo": "O Poder do Hábito",
-        "autor": "Charles Duhigg",
-        "genero": "Autoajuda / Psicologia",
-        "editora": "Objetiva",
-        "ano": 2012,
-        "imagem":"https://m.media-amazon.com/images/I/815iPX0SgkL._SY425_.jpg"
-      },
-      {
-        "id": "2",
-        "titulo": "Ayrton Senna: uma Lenda a Toda Velocidade",
-        "autor": "Christopher Hilton",
-        "genero": "Biografia / Esporte",
-        "editora": "Global Editora",
-        "ano": 2009,
-        "imagem":"https://m.media-amazon.com/images/I/71b-XOvFhuL._SY385_.jpg"
-      },
-      {
-        "id": "3",
-        "titulo": "Os segredos da mente milionária",
-        "autor": "T. Harv Eker",
-        "genero": "Desenvolvimento Pessoal",
-        "editora": "Editora Sextante",
-        "ano": 2006,
-        "imagem":"https://m.media-amazon.com/images/I/81WzW3xJb5L._SY466_.jpg"
-      },
-      {
-        "id": "4",
-        "titulo": "A tríade do tempo ",
-        "autor": "Christian Barbosa",
-        "genero": "Produtividade / Desenvolvimento Pessoal",
-        "editora": "Buzz Editora",
-        "ano": 2018,
-        "imagem":"https://m.media-amazon.com/images/I/71xbMtThHVL._SY425_.jpg"
-      },
-      {
-        "id": "5",
-        "titulo": "O homem mais rico da Babilônia",
-        "autor": "Geroge S. Clason",
-        "genero": "Finanças / Fábula Motivacional",
-        "editora": "Harper Business",
-        "ano": 2017,
-        "imagem":"https://m.media-amazon.com/images/I/61jxhn1rAWL._SY466_.jpg"
-      },
-      {
-        "id": "6",
-        "titulo": "Pai Rico, Pai Pobre",
-        "autor": "Robert Kiyosaki",
-        "genero": "Finanças Pessoais / Educação Financeira",
-        "editora": "Alta Books",
-        "ano": 2017,
-        "imagem":"https://m.media-amazon.com/images/I/51UjO3YMafL._SY445_SX342_ML2_.jpg"
-      }
-    ]
-  }
+  "livros": [
+    {
+      "id": "1",
+      "titulo": "O Poder do Hábito",
+      "autor": "Charles Duhigg",
+      "genero": "Autoajuda / Psicologia",
+      "editora": "Objetiva",
+      "ano": 2012,
+      "imagem": "https://m.media-amazon.com/images/I/815iPX0SgkL._SY425_.jpg"
+    },
+    {
+      "id": "2",
+      "titulo": "Ayrton Senna: uma Lenda a Toda Velocidade",
+      "autor": "Christopher Hilton",
+      "genero": "Biografia / Esporte",
+      "editora": "Global Editora",
+      "ano": 2009,
+      "imagem": "https://m.media-amazon.com/images/I/71b-XOvFhuL._SY385_.jpg"
+    },
+    {
+      "id": "3",
+      "titulo": "Os segredos da mente milionária",
+      "autor": "T. Harv Eker",
+      "genero": "Desenvolvimento Pessoal",
+      "editora": "Editora Sextante",
+      "ano": 2006,
+      "imagem": "https://m.media-amazon.com/images/I/81WzW3xJb5L._SY466_.jpg"
+    },
+    {
+      "id": "4",
+      "titulo": "A tríade do tempo ",
+      "autor": "Christian Barbosa",
+      "genero": "Produtividade / Desenvolvimento Pessoal",
+      "editora": "Buzz Editora",
+      "ano": 2018,
+      "imagem": "https://m.media-amazon.com/images/I/71xbMtThHVL._SY425_.jpg"
+    },
+    {
+      "id": "5",
+      "titulo": "O homem mais rico da Babilônia",
+      "autor": "Geroge S. Clason",
+      "genero": "Finanças / Fábula Motivacional",
+      "editora": "Harper Business",
+      "ano": 2017,
+      "imagem": "https://m.media-amazon.com/images/I/61jxhn1rAWL._SY466_.jpg"
+    },
+    {
+      "id": "6",
+      "titulo": "Pai Rico, Pai Pobre",
+      "autor": "Robert Kiyosaki",
+      "genero": "Finanças Pessoais / Educação Financeira",
+      "editora": "Alta Books",
+      "ano": 2017,
+      "imagem": "https://m.media-amazon.com/images/I/51UjO3YMafL._SY445_SX342_ML2_.jpg"
+    },
+    {
+      "id": "6e74",
+      "titulo": "A psicologia financeira",
+      "autor": "Morgan Housel",
+      "genero": "Autoajuda",
+      "editora": "Harper Business",
+      "ano": 2021,
+      "imagem": "https://m.media-amazon.com/images/I/71vZp6yONLL._AC_UY327_FMwebp_QL65_.jpg"
+    },
+    {
+      "id": "6a0b",
+      "titulo": "Hábitos Atômicos",
+      "autor": "James Clear",
+      "genero": "Autoajuda",
+      "editora": "Alta Life",
+      "ano": "2019",
+      "imagem": "https://m.media-amazon.com/images/I/51DOkmV31rL._SY445_SX342_ML2_.jpg"
+    }
+  ]
+}

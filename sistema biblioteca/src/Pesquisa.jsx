@@ -2,6 +2,7 @@ import { useForm } from "react-hook-form";
 import Cabecalho from "./components/Cabecalho";
 import { useEffect, useState } from 'react'
 import './Pesquisa.css'
+import ListaLivros from "./components/ListaLivros";
 
 export default function Pesquisa() {
     const{ register, handleSubmit, reset } = useForm ()
@@ -27,20 +28,7 @@ export default function Pesquisa() {
         buscarLivros()
     }, [])
 
-    const listaLivros = livros.map( livro => (
-        <div className="containerLivros">
-            <div className='cardLivro' key={livro.id}>
-                <img src={livro.imagem} alt="Capa do Filme" />
-                <div>
-                    <h2>{livro.titulo}</h2>
-                    <h3>{livro.genero}</h3>
-                    <h4>Ano de Lançamento: {livro.ano}</h4>
-                    <h4>Editora: {livro.editora}</h4>
-                </div>
-            </div>
-        </div>
-    ))
-
+    
     return(
         <>
             <Cabecalho />
@@ -57,9 +45,7 @@ export default function Pesquisa() {
                     </div>
                 </form>
             </div>
-            <div className='listaCards'>
-                {listaLivros}
-            </div>
+            <ListaLivros livros={livros} />
         </>
     )
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import Cabecalho from './components/Cabecalho'
 import './App.css'
+import ListaLivros from "./components/ListaLivros"
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
   return (
     <>  
       <Cabecalho />  
-      {listaLivros}
+      <ListaLivros livros={livros} />
     </>
   )
 }
