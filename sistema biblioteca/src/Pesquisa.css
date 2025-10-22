@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pesquisaLivros {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 40px auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pesquisaLivros h1 {
+  text-align: center;
+  color: #8f56c7;
+  margin-bottom: 20px;
+}
+
+.pesquisaLivros form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pesquisaLivros label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.pesquisaLivros input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.pesquisaLivros button {
+  background-color: #8f56c7;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.pesquisaLivros div{
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,40 @@
+.cabecalho{
+    background: linear-gradient(135deg, #4e6eff 0%, #7f3fc0 50%, #dc4bed 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cabecalho__logo{
+    padding-block: 2rem;
+    padding-inline-start: 1rem;
+    display: flex;
+    gap: 1.2rem;
+}
+.logo__livros{
+    width: 70px;
+    background-color: rgba(255, 255, 255, 0.316);
+    padding: 12px;
+    border-radius: 12px;
+}
+.titulo{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.botoes{
+    display: flex;
+}
+.botoes button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(83, 83, 83, 0.686);
+    border: none;
+    cursor: pointer;
+    height: 2.5rem;
+    color: white;
+    font-size: medium;
+    transition: background-color 0.3s; /* transição suave */
+}  
+.botoes button img{
+    height: 2rem;
+    padding: 7px;
+}
