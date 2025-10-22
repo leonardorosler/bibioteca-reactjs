@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.incluiLivros {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.incluiLivros h1 {
+    text-align: center;
+    color: #8f56c7;
+    margin-bottom: 25px;
+}
+
+.incluiLivros form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.incluiLivros label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.incluiLivros input,
+.incluiLivros select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.incluiLivros input:focus,
+.incluiLivros select:focus {
+    outline: none;
+    border-color: #8f56c7;
+    box-shadow: 0 0 0 3px rgba(143, 86, 199, 0.1);
+}
+
+.incluiLivros select {
+    cursor: pointer;
+    background-color: white;
+}
+
+.incluiLivros .botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.incluiLivros button {
+    background-color: #8f56c7;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.incluiLivros button:hover {
+    background-color: #7a45ad;
+    transform: translateY(-1px);
+}
+
+.incluiLivros button:active {
+    transform: translateY(0);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .incluiLivros {
+        padding: 20px;
+        margin: 20px;
+    }
+}

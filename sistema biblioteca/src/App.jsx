@@ -20,7 +20,7 @@ function App() {
   const listaLivros = livros.map( livro => (
     <div className="containerLivros">
       <div className='cardLivro' key={livro.id}>
-      <img src={livro.imagem} alt="Capa do Filme" />
+      <img src={livro.imagem} alt="Capa do Livro" className='capalivro'/>
       <div>
         <h2>{livro.titulo}</h2>
         <h3>{livro.genero}</h3>

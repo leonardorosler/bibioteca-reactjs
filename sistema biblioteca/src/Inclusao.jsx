@@ -1,27 +1,36 @@
 import Cabecalho from "./components/Cabecalho";
+import { useForm } from "react-hook-form";
+import { useEffect } from "react";
+import './Inclusao.css';
 
 export default function Inclusao() {
 
-
+    const { register, handleSubmit, reset, setFocus } = useForm();
 
     async function cadastraLivros(data) {
+        const { titulo, autor, genero, editora, ano, imagem } = data;
 
-        const titulo = data.titulo
-        const autor = data.autor
-        const genero = data.genero
-        const editora = data.editora
-        const ano = data.ano
-        const capa = data.capa
+        try {
+            const resposta = await fetch("http://localhost:3000/livros", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ titulo, autor, genero, editora, ano, imagem })
+            });
 
+            if (!resposta.ok) throw new Error("Erro ao incluir o livro");
 
-        // const livrosFiltrados = livrosOriginais.filter(livro => 
-        // livro.titulo.toLowerCase().includes(nomeLivro.toLowerCase())
-        // )
-        // setLivros(livrosFiltrados)
-        // reset()
+            const novoLivro = await resposta.json();
+            alert(`Ok! Livro cadastrado com o código: ${novoLivro.id}`);
+        } catch (erro) {
+            console.log(`Erro: ${erro.message}`);
+        }
+
+        reset();
     }
 
-
+    useEffect(() => {
+        setFocus("titulo");
+    }, []);
 
     return(
         <>
@@ -95,7 +104,7 @@ export default function Inclusao() {
                     </p>
                     <p>
                         <label>URL da capa do livro:</label>
-                        <input type="url" {...register("capa")} placeholder="https://exemplo.com/capa.jpg" required/>
+                        <input type="text" {...register("imagem")} placeholder="https://exemplo.com/capa.jpg" required/>
                     </p>
                     
                     <div className="botao">
